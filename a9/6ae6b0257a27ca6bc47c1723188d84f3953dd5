@@ -1,0 +1,14 @@
+apps/web/tsconfig.json
+  h_2bc691fceb4fe5 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a96ae6b0257a27ca6bc47c1723188d84f3953dd5",
+  "prompts": {},
+  "humans": {
+    "h_2bc691fceb4fe5": {
+      "author": "Jason Connolly <jcodog@jconet.co.uk>"
+    }
+  }
+}
