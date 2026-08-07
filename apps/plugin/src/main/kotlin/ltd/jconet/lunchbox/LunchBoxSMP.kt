@@ -2,7 +2,7 @@ package ltd.jconet.lunchbox
 
 import org.bukkit.plugin.java.JavaPlugin
 
-class LunchBoxPlugin : JavaPlugin() {
+class LunchBoxSMP : JavaPlugin() {
     override fun onEnable() {
         logger.info("LunchBox SMP plugin enabled.")
     }

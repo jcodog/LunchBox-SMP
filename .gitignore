@@ -43,3 +43,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Kotlin - plugin development
+apps/plugin/.gradle/
+apps/plugin/.kotlin/
+apps/plugin/build/
