@@ -1,0 +1,153 @@
+apps/plugin/build.gradle.kts
+  h_2bc691fceb4fe5 1-34
+  h_2bc691fceb4fe5 35-40
+apps/plugin/settings.gradle.kts
+  h_2bc691fceb4fe5 1
+.idea/.gitignore
+  h_2bc691fceb4fe5 1-10
+.idea/codeStyles/Project.xml
+  h_2bc691fceb4fe5 1-50
+.idea/codeStyles/codeStyleConfig.xml
+  h_2bc691fceb4fe5 1-5
+.idea/compiler.xml
+  h_2bc691fceb4fe5 1-10
+.idea/gradle.xml
+  h_2bc691fceb4fe5 1-18
+.idea/inspectionProfiles/Project_Default.xml
+  h_2bc691fceb4fe5 1-6
+.idea/jarRepositories.xml
+  h_2bc691fceb4fe5 1-25
+.idea/kotlinc.xml
+  h_2bc691fceb4fe5 1-7
+.idea/libraries/Gradle__biz_aQute_bnd_biz_aQute_bnd_annotation_7_1_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__com_google_auto_service_auto_service_annotations_1_1_1.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__com_google_code_gson_gson_2_14_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_48_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__com_google_guava_failureaccess_1_0_3.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__com_google_guava_guava_33_6_0_jre.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml
+  h_2bc691fceb4fe5 1-10
+.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_3_1.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__com_mojang_brigadier_1_3_10.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__io_papermc_paper_paper_api_26_2_build_102_stable.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__it_unimi_dsi_fastutil_8_5_18.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__javax_inject_javax_inject_1.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__net_kyori_adventure_api_5_2_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__net_kyori_adventure_key_5_2_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__net_kyori_adventure_text_logger_slf4j_5_2_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__net_kyori_adventure_text_minimessage_5_2_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__net_kyori_adventure_text_serializer_gson_5_2_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__net_kyori_adventure_text_serializer_json_5_2_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__net_kyori_adventure_text_serializer_legacy_5_2_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__net_kyori_adventure_text_serializer_plain_5_2_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__net_kyori_option_1_1_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__net_md_5_bungeecord_chat_1_21_R0_2_deprecated_build_21.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_12_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_26_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_apache_maven_maven_artifact_3_9_6.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_apache_maven_maven_builder_support_3_9_6.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_apache_maven_maven_model_3_9_6.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_apache_maven_maven_model_builder_3_9_6.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_apache_maven_maven_repository_metadata_3_9_6.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_apache_maven_maven_resolver_provider_3_9_6.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_apache_maven_resolver_maven_resolver_api_1_9_18.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_apache_maven_resolver_maven_resolver_impl_1_9_18.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_apache_maven_resolver_maven_resolver_named_locks_1_9_18.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_apache_maven_resolver_maven_resolver_spi_1_9_18.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_apache_maven_resolver_maven_resolver_util_1_9_18.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_checkerframework_checker_qual_3_49_2.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_codehaus_plexus_plexus_interpolation_1_26.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_codehaus_plexus_plexus_utils_3_5_1.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_eclipse_sisu_org_eclipse_sisu_inject_0_9_0_M2.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_jetbrains_annotations_26_1_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_2_2_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_joml_joml_1_10_8.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_jspecify_jspecify_1_0_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_osgi_org_osgi_annotation_bundle_2_0_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_osgi_org_osgi_annotation_versioning_1_1_2.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_osgi_org_osgi_resource_1_0_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_osgi_org_osgi_service_serviceloader_1_0_0.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_slf4j_slf4j_api_2_0_17.xml
+  h_2bc691fceb4fe5 1-12
+.idea/libraries/Gradle__org_yaml_snakeyaml_2_2.xml
+  h_2bc691fceb4fe5 1-12
+.idea/lunchbox-smp.iml
+  h_2bc691fceb4fe5 1-9
+.idea/misc.xml
+  h_2bc691fceb4fe5 1-9
+.idea/modules.xml
+  h_2bc691fceb4fe5 1-11
+.idea/modules/lunchbox-smp-plugin.iml
+  h_2bc691fceb4fe5 1-12
+.idea/modules/lunchbox-smp-plugin.main.iml
+  h_2bc691fceb4fe5 1-101
+.idea/modules/lunchbox-smp-plugin.test.iml
+  h_2bc691fceb4fe5 1-47
+.idea/prettier.xml
+  h_2bc691fceb4fe5 1-6
+.idea/vcs.xml
+  h_2bc691fceb4fe5 1-6
+apps/plugin/.gradle/buildOutputCleanup/cache.properties
+  h_2bc691fceb4fe5 1-2
+apps/plugin/gradle/wrapper/gradle-wrapper.properties
+  h_2bc691fceb4fe5 1-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "00f45862ea965ecbed082b5170a7f63bd44963f3",
+  "prompts": {},
+  "humans": {
+    "h_2bc691fceb4fe5": {
+      "author": "Jason Connolly <jcodog@jconet.co.uk>"
+    }
+  }
+}
