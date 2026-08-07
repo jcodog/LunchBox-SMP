@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.2.0"
+    kotlin("jvm") version "2.4.10"
     id("com.gradleup.shadow") version "8.3.8"
 }
 
@@ -22,6 +22,10 @@ dependencies {
         compileOnly("org.codehaus.plexus:plexus-utils:3.6.1") {
             because("CVE-2025-67030")
         }
+
+        compileOnly("org.apache.commons:commons-lang3:3.18.0") {
+            because("CVE-2025-48924")
+        }
     }
 }
 
@@ -30,6 +34,12 @@ kotlin {
 }
 
 tasks {
+    processResources {
+        filesMatching("plugin.yml") {
+            expand("version" to project.version)
+        }
+    }
+
     build {
         dependsOn(shadowJar)
     }
