@@ -1,0 +1,6 @@
+name: LunchBoxSMP
+version: '${version}'
+main: ltd.jconet.lunchbox.LunchBoxSMP
+description: Official LunchBox SMP server plugin.
+author: JCoNet LTD
+api-version: '26.2'
