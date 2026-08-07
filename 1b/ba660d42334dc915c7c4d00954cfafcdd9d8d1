@@ -1,0 +1,32 @@
+.idea/jsonSchemas.xml
+  h_2bc691fceb4fe5 1-25
+.idea/kotlinc.xml
+  h_2bc691fceb4fe5 5
+.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_18_0.xml
+  h_2bc691fceb4fe5 2-3,5,9
+.idea/libraries/Gradle__org_codehaus_plexus_plexus_utils_3_6_1.xml
+  h_2bc691fceb4fe5 2-3,5,9
+.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_2_4_10.xml
+  h_2bc691fceb4fe5 2-3,5,9
+.idea/modules/lunchbox-smp-plugin.main.iml
+  h_2bc691fceb4fe5 14,24-27,32-35,45,47-50,53,89,101
+.idea/modules/lunchbox-smp-plugin.test.iml
+  h_2bc691fceb4fe5 5,16-19,24-27,43
+apps/plugin/build.gradle.kts
+  h_2bc691fceb4fe5 2,25-28,37-42
+apps/plugin/src/main/kotlin/ltd/jconet/lunchbox/LunchBoxSMPPlugin.kt
+  h_2bc691fceb4fe5 1-13
+apps/plugin/src/main/resources/plugin.yml
+  h_2bc691fceb4fe5 1-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1bba660d42334dc915c7c4d00954cfafcdd9d8d1",
+  "prompts": {},
+  "humans": {
+    "h_2bc691fceb4fe5": {
+      "author": "Jason Connolly <jcodog@jconet.co.uk>"
+    }
+  }
+}
