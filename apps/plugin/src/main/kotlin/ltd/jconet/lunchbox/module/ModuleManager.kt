@@ -42,4 +42,10 @@ class ModuleManager(
 
         enabledModules.clear()
     }
+
+    fun registeredCount(): Int = modules.size
+
+    fun enabledCount(): Int = enabledModules.size
+
+    fun isEnabled(id: String): Boolean = id in enabledModules
 }

@@ -7,7 +7,8 @@ import ltd.jconet.lunchbox.module.test.TestModule
 import org.bukkit.plugin.java.JavaPlugin
 
 class LunchBoxSMP : JavaPlugin() {
-    private lateinit var moduleManager: ModuleManager
+    lateinit var moduleManager: ModuleManager
+        private set
 
     override fun onEnable() {
         saveDefaultConfig()
