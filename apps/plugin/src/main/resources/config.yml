@@ -1,0 +1,15 @@
+modules:
+  test:
+    enabled: false
+
+  announcements:
+    enabled: false
+
+  sleep:
+    enabled: false
+
+  timber:
+    enabled: false
+
+  inventory-sorting:
+    enabled: false
