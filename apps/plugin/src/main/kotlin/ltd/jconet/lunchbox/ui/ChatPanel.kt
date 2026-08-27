@@ -3,11 +3,15 @@ package ltd.jconet.lunchbox.ui
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.format.NamedTextColor
 import net.kyori.adventure.text.format.TextDecoration
+import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer
 
 object ChatPanel {
 
     private const val CHAT_CENTER_PX = 154
     private const val SPACE_WIDTH_PX = 4
+
+    private val plainTextSerializer =
+        PlainTextComponentSerializer.plainText()
 
     private val border = Component.text(
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
@@ -31,22 +35,34 @@ object ChatPanel {
     }
 
     fun title(text: String): Component {
-        return centered(
+        val component = Component.text(
             text,
-            Component.text(
-                text,
-                NamedTextColor.GOLD
-            ).decorate(TextDecoration.BOLD)
+            NamedTextColor.GOLD
+        ).decorate(TextDecoration.BOLD)
+
+        return centered(
+            component = component,
+            bold = true
         )
     }
 
-    fun centered(
-        visibleText: String,
-        component: Component
+    fun centered(component: Component): Component {
+        return centered(
+            component = component,
+            bold = false
+        )
+    }
+
+    private fun centered(
+        component: Component,
+        bold: Boolean
     ): Component {
-        val textWidth = pixelWidth(visibleText)
+        val text = plainTextSerializer.serialize(component)
+        val textWidth = pixelWidth(text, bold)
+
         val paddingPixels =
-            (CHAT_CENTER_PX - (textWidth / 2)).coerceAtLeast(0)
+            (CHAT_CENTER_PX - (textWidth / 2))
+                .coerceAtLeast(0)
 
         val spaces = paddingPixels / SPACE_WIDTH_PX
 
@@ -54,15 +70,28 @@ object ChatPanel {
             .append(component)
     }
 
-    private fun pixelWidth(text: String): Int {
-        return text.sumOf { characterWidth(it) + 1 }
+    private fun pixelWidth(
+        text: String,
+        bold: Boolean
+    ): Int {
+        return text.sumOf { character ->
+            if (character == ' ') {
+                SPACE_WIDTH_PX
+            } else {
+                characterWidth(character) +
+                        1 +
+                        if (bold) 1 else 0
+            }
+        }
     }
 
     private fun characterWidth(character: Char): Int {
         return when (character) {
-            ' ', 'I', 'i', '!', '.', ',', ':', ';', '\'', '|' -> 2
+            'i', '!', '.', ',', ':', ';', '|' -> 1
 
-            'l', 't', '[', ']', '(', ')' -> 3
+            '\'', '`', 'l' -> 2
+
+            'I', 't', '[', ']', '(', ')' -> 3
 
             'f', 'k', '<', '>' -> 4
 

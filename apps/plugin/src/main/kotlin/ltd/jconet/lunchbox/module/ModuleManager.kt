@@ -8,6 +8,7 @@ class ModuleManager(
 ) {
     private val modules = linkedMapOf<String, Module>()
     private val states = mutableMapOf<String, ModuleState>()
+    private val cleanupRequired = mutableSetOf<String>()
 
     fun register(module: Module) {
         require(module.id !in modules) {
@@ -31,6 +32,8 @@ class ModuleManager(
             }
 
             try {
+                cleanupRequired.add(module.id)
+
                 module.enable()
 
                 states[module.id] = ModuleState.ENABLED
@@ -46,13 +49,33 @@ class ModuleManager(
                     "Failed to enable ${module.name} module",
                     exception
                 )
+
+                try {
+                    module.disable()
+                    cleanupRequired.remove(module.id)
+
+                    plugin.logger.info(
+                        "${module.name} module cleaned up after failed enable"
+                    )
+                } catch (cleanupException: Exception) {
+                    plugin.logger.log(
+                        Level.SEVERE,
+                        "Failed to clean up ${module.name} module after failed enable; cleanup will be retried on shutdown",
+                        cleanupException
+                    )
+                }
             }
         }
     }
 
     fun disableModules() {
         for (module in modules.values.reversed()) {
-            if (states[module.id] != ModuleState.ENABLED) {
+            val state = states[module.id]
+
+            if (
+                state != ModuleState.ENABLED &&
+                module.id !in cleanupRequired
+            ) {
                 continue
             }
 
@@ -69,6 +92,7 @@ class ModuleManager(
                     exception
                 )
             } finally {
+                cleanupRequired.remove(module.id)
                 states[module.id] = ModuleState.DISABLED
             }
         }
@@ -82,7 +106,8 @@ class ModuleManager(
     fun failedCount(): Int =
         states.values.count { it == ModuleState.FAILED }
 
-    fun stateOf(id: String): ModuleState? = states[id]
+    fun stateOf(id: String): ModuleState? =
+        states[id]
 
     fun isEnabled(id: String): Boolean =
         states[id] == ModuleState.ENABLED

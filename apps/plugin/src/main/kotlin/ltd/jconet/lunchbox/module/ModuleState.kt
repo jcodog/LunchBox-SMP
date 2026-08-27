@@ -1,6 +1,6 @@
 package ltd.jconet.lunchbox.module
 
-enum  class ModuleState {
+enum class ModuleState {
     DISABLED,
     ENABLED,
     FAILED
